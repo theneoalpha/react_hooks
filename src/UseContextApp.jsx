@@ -15,6 +15,16 @@ export default function UseContextApp() {
 
   // Step 4 : Data pass karenge
   const data="ABCD";
+
+
+
+  // Step 6 : Data superChild se get karne ke liye function
+
+  const [day, setDay]=useState("Monday");
+
+  const getDay=(data)=>{
+    setDay(data);
+  }
   return (
     <>
       {/* Step 3 : Wrapping in top level taki yaha se baaki sare childs generations me use kar sake <GlobalInfo.Provider> */}
@@ -28,8 +38,10 @@ export default function UseContextApp() {
                 </GlobalInfo.Provider> */}
 
       {/* Step 4 : Data pass karenge    */}
-      <GlobalInfo.Provider value={{ data: data }}>
-        <h1>Lets Understand useContext/ContextAPI</h1>
+
+          {/* Step 9 : Now uss day ko use Karenge App comonent me  */}
+      <GlobalInfo.Provider value={{ data: data, getDay: getDay }}>
+        <h1>Lets Understand useContext/ContextAPI {day}</h1>
         <UseContextChild />
       </GlobalInfo.Provider>
     </>

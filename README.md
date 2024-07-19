@@ -43,3 +43,18 @@
             Step 5: Lets access in Child  and for this we use "useContext" Hook
 
                     Step 5.1 : Import karenge global variable ko child component me and use Karenge
+
+           SUCCESSFULLY COMPLETED             
+
+
+        Steps to use Reverse - Data passing from child to component
+
+            Step 6 : Parent component me function banayenge jo child se data lake dega       
+
+            Step 7 : uss Function ko "getDay" import karenge SuperChild me      
+
+            Step 8 : Day variable data ko button ke through getDay function ko pass karenge
+
+            Step 9 : Now uss day ko use Karenge App comonent me 
+
+            SUCCESSFULLY COMPLETED
