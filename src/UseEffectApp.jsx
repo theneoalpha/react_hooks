@@ -9,7 +9,7 @@ function App() {
 
    {/* UseState and UseEffect */}
 
-{/*   
+{
 
 
  //     useState is componentDidUpdate lifecycle model
@@ -46,15 +46,13 @@ function App() {
       </button>
 
 
- // useState and useEffect Ending */}
 
-return(
-<>
-<h1>Hello</h1>
+
 
 
     </>
   );
+}
 }
 
 export default App;
